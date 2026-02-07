@@ -12,13 +12,13 @@ export class AppComponent {
   bridge: any;
 
   constructor() {
-    this.ipc = (window as any).require('electron').ipcRenderer;
-    this.bridge = (window as any).require('electron').contextBridge;
+   //this.ipc = (window as any).require('electron').ipcRenderer;
+    //this.bridge = (window as any).require('electron').contextBridge;
 
-    this.ipc.send('test-send', { d: 'data from ng' });
-    this.ipc.on('test-reply', function (a: any, b: any) {
-      console.log(b, 'fromBE')
-    })
+    //this.ipc.send('test-send', { d: 'data from ng' });
+    //this.ipc.on('test-reply', function (a: any, b: any) {
+    //  console.log(b, 'fromBE')
+    //})
 
 
   }
